@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://4pqund3nukl7"]
+
+[ext_resource type="PackedScene" uid="uid://b4udwv0eicc0o" path="res://DevMap.tscn" id="1_3mqji"]
+[ext_resource type="Script" uid="uid://bxugqnugtnuf1" path="res://player.gd" id="2_rpqi1"]
+[ext_resource type="PackedScene" uid="uid://dcfyx3omcemb5" path="res://Player.tscn" id="2_x4av3"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMapLayer" parent="." instance=ExtResource("1_3mqji")]
+
+[node name="Player" parent="." node_paths=PackedStringArray("tilemap") instance=ExtResource("2_x4av3")]
+script = ExtResource("2_rpqi1")
+tilemap = NodePath("../TileMapLayer")

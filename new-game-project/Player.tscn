@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcfyx3omcemb5"]
+
+[ext_resource type="Texture2D" uid="uid://cdnwoid5inevf" path="res://new-blue.png" id="2_kpjcp"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3, 1)
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("2_kpjcp")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(5, 5)
